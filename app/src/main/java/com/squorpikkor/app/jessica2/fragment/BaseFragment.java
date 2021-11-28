@@ -1,4 +1,4 @@
-package com.squorpikkor.app.jessica2;
+package com.squorpikkor.app.jessica2.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +10,11 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squorpikkor.app.jessica2.Algorithm;
+import com.squorpikkor.app.jessica2.AlgorithmAdapter;
+import com.squorpikkor.app.jessica2.MainViewModel;
+import com.squorpikkor.app.jessica2.R;
 
 import java.util.ArrayList;
 

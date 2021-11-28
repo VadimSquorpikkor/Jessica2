@@ -90,6 +90,7 @@ public class AlgorithmAdapter extends RecyclerView.Adapter<AlgorithmAdapter.Adap
         Algorithm algorithm = list.get(position);
 
         holder.algorithm.setText(algorithm.getAlgorithm());
+        holder.image.setImageResource(algorithm.getImage());
     }
 
     /**Размер списка*/

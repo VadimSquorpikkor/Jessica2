@@ -10,7 +10,7 @@ public class Algorithm {
     private int id;
     private int image;
 
-    public Algorithm(int type, String algorithm, String name, int id, int image) {
+    public Algorithm(int type, int image, int id, String name, String algorithm) {
         this.type = type;
         this.algorithm = algorithm;
         this.name = name;

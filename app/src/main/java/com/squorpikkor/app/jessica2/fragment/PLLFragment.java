@@ -1,7 +1,9 @@
-package com.squorpikkor.app.jessica2;
+package com.squorpikkor.app.jessica2.fragment;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
+
+import com.squorpikkor.app.jessica2.Algorithm;
 
 import java.util.ArrayList;
 
@@ -13,6 +15,6 @@ public class PLLFragment extends BaseFragment{
 
     @Override
     MutableLiveData<ArrayList<Algorithm>> getList() {
-        return mViewModel.getAllList();//todo выбрать лист для отображения
+        return mViewModel.getPllList();
     }
 }

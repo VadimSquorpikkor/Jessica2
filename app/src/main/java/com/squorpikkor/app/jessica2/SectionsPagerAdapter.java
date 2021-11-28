@@ -8,6 +8,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.squorpikkor.app.jessica2.fragment.BigCubeFragment;
+import com.squorpikkor.app.jessica2.fragment.F2LFragment;
+import com.squorpikkor.app.jessica2.fragment.OLLFragment;
+import com.squorpikkor.app.jessica2.fragment.PLLFragment;
+
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
