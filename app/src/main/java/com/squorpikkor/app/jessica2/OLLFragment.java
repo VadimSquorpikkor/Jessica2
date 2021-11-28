@@ -13,6 +13,6 @@ public class OLLFragment extends BaseFragment{
 
     @Override
     MutableLiveData<ArrayList<Algorithm>> getList() {
-        return null;//todo выбрать лист для отображения
+        return mViewModel.getAllList();//todo выбрать лист для отображения
     }
 }
