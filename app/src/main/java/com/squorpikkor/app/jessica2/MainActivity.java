@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.widget.TextView;
 
 import com.google.android.material.tabs.TabLayout;
 
