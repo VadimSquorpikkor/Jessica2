@@ -1,7 +1,6 @@
 package com.squorpikkor.app.jessica2;
 
 import android.content.Context;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -19,14 +18,12 @@ import com.squorpikkor.app.jessica2.fragment.PLLFragment;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-    private static final int[] TAB_TITLES = new int[]{R.string.f2l, R.string.oll, R.string.pll, R.string.big};
+    private final int[] TAB_TITLES;
     private final Context mContext;
-    FragmentManager fm;
-    Fragment[] fragments;
+    private final Fragment[] fragments;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        this.fm = fm;
         mContext = context;
         fragments = new Fragment[]{
                 F2LFragment.newInstance(),
@@ -34,6 +31,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 PLLFragment.newInstance(),
                 BigCubeFragment.newInstance()
         };
+        TAB_TITLES = new int[]{R.string.f2l, R.string.oll, R.string.pll, R.string.big};
     }
 
     @NonNull

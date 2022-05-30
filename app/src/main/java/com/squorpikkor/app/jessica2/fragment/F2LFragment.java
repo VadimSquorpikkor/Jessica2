@@ -1,11 +1,7 @@
 package com.squorpikkor.app.jessica2.fragment;
 
+import static com.squorpikkor.app.jessica2.Data.FTL;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.MutableLiveData;
-
-import com.squorpikkor.app.jessica2.Algorithm;
-
-import java.util.ArrayList;
 
 public class F2LFragment extends BaseFragment{
 
@@ -14,7 +10,7 @@ public class F2LFragment extends BaseFragment{
     }
 
     @Override
-    public MutableLiveData<ArrayList<Algorithm>> getList() {
-        return mViewModel.getF2lList();
+    int getType() {
+        return FTL;
     }
 }

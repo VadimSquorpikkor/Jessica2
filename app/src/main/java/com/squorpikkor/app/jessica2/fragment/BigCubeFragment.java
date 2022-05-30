@@ -1,5 +1,8 @@
 package com.squorpikkor.app.jessica2.fragment;
 
+import static com.squorpikkor.app.jessica2.Data.BIG;
+import static com.squorpikkor.app.jessica2.Data.FTL;
+
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
 
@@ -14,7 +17,7 @@ public class BigCubeFragment extends BaseFragment{
     }
 
     @Override
-    MutableLiveData<ArrayList<Algorithm>> getList() {
-        return mViewModel.getBigList();
+    int getType() {
+        return BIG;
     }
 }

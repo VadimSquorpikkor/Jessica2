@@ -13,7 +13,7 @@ public class Data {
         ArrayList<Algorithm> list = new ArrayList<>();
         list.add(new Algorithm(FTL, R.drawable.f2l01, 1, "1", "U R U' R' U' y L' U L"));
         list.add(new Algorithm(FTL, R.drawable.f2l02, 1, "2", "y U' L' U L U y' R U' R'"));
-        list.add(new Algorithm(FTL, R.drawable.f2l03, 1, "1", "U R U' R'\n" +
+        list.add(new Algorithm(FTL, R.drawable.f2l03, 1, "1", "U R U' R'",
                 "R' F R F'"));
         list.add(new Algorithm(FTL, R.drawable.f2l04, 1, "1", "y U' L' U L\n" +
                 "F R' F' R"));

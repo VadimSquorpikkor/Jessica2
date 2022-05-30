@@ -1,48 +1,47 @@
 package com.squorpikkor.app.jessica2;
 
-import android.util.Log;
+import static com.squorpikkor.app.jessica2.Data.BIG;
+import static com.squorpikkor.app.jessica2.Data.FTL;
+import static com.squorpikkor.app.jessica2.Data.OLL;
+import static com.squorpikkor.app.jessica2.Data.PLL;
 
-import androidx.lifecycle.MutableLiveData;
+import android.util.Log;
 import androidx.lifecycle.ViewModel;
 
 import java.util.ArrayList;
 
 public class MainViewModel extends ViewModel {
 
-    MutableLiveData<ArrayList<Algorithm>> allList;
-    MutableLiveData<ArrayList<Algorithm>> f2lList;
-    MutableLiveData<ArrayList<Algorithm>> ollList;
-    MutableLiveData<ArrayList<Algorithm>> pllList;
-    MutableLiveData<ArrayList<Algorithm>> bigList;
+    public static final String TAG = "TAG";
+
+    ArrayList<Algorithm> allList;
+    ArrayList<Algorithm> f2lList;
+    ArrayList<Algorithm> ollList;
+    ArrayList<Algorithm> pllList;
+    ArrayList<Algorithm> bigList;
 
     public MainViewModel() {
         ArrayList<Algorithm> list = Data.getList();
-        allList = new MutableLiveData<>(list);
-        f2lList = new MutableLiveData<>(Utils.getListByType(list, Data.FTL));
-        ollList = new MutableLiveData<>(Utils.getListByType(list, Data.OLL));
-        pllList = new MutableLiveData<>(Utils.getListByType(list, Data.PLL));
-        bigList = new MutableLiveData<>(Utils.getListByType(list, Data.BIG));
-    }
-
-    public MutableLiveData<ArrayList<Algorithm>> getAllList() {
-        return allList;
-    }
-    public MutableLiveData<ArrayList<Algorithm>> getF2lList() {
-        return f2lList;
-    }
-    public MutableLiveData<ArrayList<Algorithm>> getOllList() {
-        return ollList;
-    }
-    public MutableLiveData<ArrayList<Algorithm>> getPllList() {
-        return pllList;
-    }
-    public MutableLiveData<ArrayList<Algorithm>> getBigList() {
-        return bigList;
+        allList = list;
+        f2lList = Utils.getListByType(list, FTL);
+        ollList = Utils.getListByType(list, OLL);
+        pllList = Utils.getListByType(list, PLL);
+        bigList = Utils.getListByType(list, BIG);
     }
 
     @Override
     protected void onCleared() {
         Log.e("TAG", "onDestroy");
         super.onCleared();
+    }
+
+    public ArrayList<Algorithm> getList(int type) {
+        switch (type) {
+            case FTL:return f2lList;
+            case OLL:return ollList;
+            case PLL:return pllList;
+            case BIG:return bigList;
+        }
+        return allList;
     }
 }

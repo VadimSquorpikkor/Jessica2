@@ -1,0 +1,26 @@
+package com.squorpikkor.app.jessica2;
+
+import static com.squorpikkor.app.jessica2.fragment.BaseFragment.EXTRA_POSITION;
+import static com.squorpikkor.app.jessica2.fragment.BaseFragment.EXTRA_TYPE;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.squorpikkor.app.jessica2.pager.PagerFragment;
+
+public class InfoActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_info);
+
+        int position = getIntent().getIntExtra(EXTRA_POSITION, 0);
+        int type = getIntent().getIntExtra(EXTRA_TYPE, 0);
+
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, PagerFragment.newInstance(position, type))
+                    .commitNow();
+        }
+    }
+}

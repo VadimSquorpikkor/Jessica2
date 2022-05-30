@@ -4,13 +4,13 @@ public class Algorithm {
 
 
     private int type;//F2L
-    private String algorithm;
+    private String[] algorithm;
     private String name;
     private boolean isLearned;
     private int id;
     private int image;
 
-    public Algorithm(int type, int image, int id, String name, String algorithm) {
+    public Algorithm(int type, int image, int id, String name, String...algorithm) {
         this.type = type;
         this.algorithm = algorithm;
         this.name = name;
@@ -22,7 +22,7 @@ public class Algorithm {
         return type;
     }
 
-    public String getAlgorithm() {
+    public String[] getAlgorithm() {
         return algorithm;
     }
 

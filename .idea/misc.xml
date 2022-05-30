@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/activity_info.xml" value="0.3546875" />
         <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/activity_main.xml" value="0.2128205128205128" />
+        <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/fragment_algo_info.xml" value="0.265234375" />
+        <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/fragment_algo_type_select.xml" value="0.3546875" />
         <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/fragment_list.xml" value="0.2128205128205128" />
+        <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/fragment_pager.xml" value="0.3546875" />
         <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/item_template.xml" value="0.2128205128205128" />
+        <entry key="..\:/GitHub/Jessica2/app/src/main/res/layout/item_template_for_lin.xml" value="0.34923076923076923" />
       </map>
     </option>
   </component>
