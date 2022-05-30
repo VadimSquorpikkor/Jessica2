@@ -1,6 +1,6 @@
 package com.squorpikkor.app.jessica2.pager;
 
-import static com.squorpikkor.app.jessica2.Data.FTL;
+import static com.squorpikkor.app.jessica2.data.Data.FTL;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

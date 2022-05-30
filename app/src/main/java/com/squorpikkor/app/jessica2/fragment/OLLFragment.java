@@ -1,6 +1,6 @@
 package com.squorpikkor.app.jessica2.fragment;
 
-import static com.squorpikkor.app.jessica2.Data.OLL;
+import static com.squorpikkor.app.jessica2.data.Data.OLL;
 
 import androidx.fragment.app.Fragment;
 

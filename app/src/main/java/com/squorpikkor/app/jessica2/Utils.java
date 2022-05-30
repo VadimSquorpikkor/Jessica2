@@ -1,5 +1,7 @@
 package com.squorpikkor.app.jessica2;
 
+import com.squorpikkor.app.jessica2.data.Algorithm;
+
 import java.util.ArrayList;
 
 public class Utils {

@@ -1,4 +1,4 @@
-package com.squorpikkor.app.jessica2;
+package com.squorpikkor.app.jessica2.data;
 
 public class Algorithm {
 

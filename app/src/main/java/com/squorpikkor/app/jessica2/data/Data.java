@@ -1,4 +1,6 @@
-package com.squorpikkor.app.jessica2;
+package com.squorpikkor.app.jessica2.data;
+
+import com.squorpikkor.app.jessica2.R;
 
 import java.util.ArrayList;
 

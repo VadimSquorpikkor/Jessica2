@@ -1,6 +1,6 @@
 package com.squorpikkor.app.jessica2.fragment;
 
-import static com.squorpikkor.app.jessica2.Data.FTL;
+import static com.squorpikkor.app.jessica2.data.Data.FTL;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.squorpikkor.app.jessica2.Algorithm;
+import com.squorpikkor.app.jessica2.data.Algorithm;
 import com.squorpikkor.app.jessica2.MainViewModel;
 import com.squorpikkor.app.jessica2.R;
 

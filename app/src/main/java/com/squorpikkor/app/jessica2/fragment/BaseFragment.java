@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squorpikkor.app.jessica2.Algorithm;
+import com.squorpikkor.app.jessica2.data.Algorithm;
 import com.squorpikkor.app.jessica2.InfoActivity;
 import com.squorpikkor.app.jessica2.adapter.AlgorithmAdapter;
 import com.squorpikkor.app.jessica2.MainViewModel;

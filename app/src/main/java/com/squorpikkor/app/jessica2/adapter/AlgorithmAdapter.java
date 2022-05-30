@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squorpikkor.app.jessica2.Algorithm;
+import com.squorpikkor.app.jessica2.data.Algorithm;
 import com.squorpikkor.app.jessica2.R;
 
 import java.util.ArrayList;

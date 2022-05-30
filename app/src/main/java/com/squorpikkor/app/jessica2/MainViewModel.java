@@ -1,12 +1,15 @@
 package com.squorpikkor.app.jessica2;
 
-import static com.squorpikkor.app.jessica2.Data.BIG;
-import static com.squorpikkor.app.jessica2.Data.FTL;
-import static com.squorpikkor.app.jessica2.Data.OLL;
-import static com.squorpikkor.app.jessica2.Data.PLL;
+import static com.squorpikkor.app.jessica2.data.Data.BIG;
+import static com.squorpikkor.app.jessica2.data.Data.FTL;
+import static com.squorpikkor.app.jessica2.data.Data.OLL;
+import static com.squorpikkor.app.jessica2.data.Data.PLL;
 
 import android.util.Log;
 import androidx.lifecycle.ViewModel;
+
+import com.squorpikkor.app.jessica2.data.Algorithm;
+import com.squorpikkor.app.jessica2.data.Data;
 
 import java.util.ArrayList;
 
