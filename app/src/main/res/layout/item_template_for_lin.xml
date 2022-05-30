@@ -10,7 +10,7 @@
 
     <LinearLayout style="@style/horizontal">
 
-        <TextView android:id="@+id/algorithm" style="@style/text_medium"/>
+        <TextView android:id="@+id/algorithm" style="@style/H3_text"/>
 
     </LinearLayout>
 

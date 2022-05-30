@@ -6,10 +6,28 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/position"
+        style="@style/H2_text"
+        tools:text="1."/>
+    <TextView
+        android:id="@+id/name"
+        style="@style/H2_text"
+        tools:text="Лапка"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/algorithm_fav"
+        style="@style/H2_text"
+        tools:text="R2R2R2"/>
+
+    <TextView
         android:id="@+id/algorithm"
-        style="@style/text_medium"
+        style="@style/H2_text_dark"
         tools:text="R2R2R2"/>
 
 </LinearLayout>

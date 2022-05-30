@@ -2,12 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Jessica2" parent="Theme.AppCompat.NoActionBar">
 
-        <item name="textColor">@color/textPrimary</item>
-        <item name="coloredText">@color/textPrimary</item>
-        <item name="EditTextBackgroundColor">@color/dark_grey</item>
-        <item name="PanelBackgroundColor">@color/colorPrimary</item>
-        <item name="customButton">@color/dark_grey</item>
-        <item name="customButtonPressed">@color/colorOrange</item>
+            <item name="OrdinaryTextColor">@color/textPrimary</item>
+            <item name="OrdinaryTextColorDark">@color/textPrimaryDark</item>
 
     </style>
 </resources>

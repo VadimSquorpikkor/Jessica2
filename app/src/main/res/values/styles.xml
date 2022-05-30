@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
+<!--*********************************************************************************************-->
     <style name="my_base_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -11,79 +12,69 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+    <style name="vertical_left" parent="vertical">
+        <item name="android:gravity">left</item>
+    </style>
+
     <style name="horizontal" parent="my_base_style">
         <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center_vertical</item>
     </style>
 
     <style name="horizontalCenter" parent="horizontal">
         <item name="android:gravity">center</item>
     </style>
-
-    <style name="text_small">
+<!--*********************************************************************************************-->
+    <style name="base_text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:padding">5dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">?attr/textColor</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/OrdinaryTextColor</item>
     </style>
 
-    <style name="text_medium">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:padding">5dp</item>
+    <style name="base_text_weight" parent="base_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
-        <item name="android:textColor">?attr/textColor</item>
+    </style>
+<!--*********************************************************************************************-->
+
+    <!--обычный средний текст белый на черном, черный на белом-->
+    <style name="ordinary_text" parent="base_text">
+    </style>
+    <!--обычный средний текст белый на черном, черный на белом. авто ширина (weight=1) -->
+    <style name="ordinary_text_weight" parent="base_text_weight">
     </style>
 
-    <style name="dialogLinearEdit">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-<!--        <item name="android:background">@drawable/edit_text_field</item>-->
-        <item name="android:paddingTop">4dp</item>
-        <item name="android:paddingBottom">4dp</item>
-        <item name="android:paddingStart">16dp</item>
-        <item name="android:paddingEnd">16dp</item>
+    <style name="H1_text" parent="base_text">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="H2_text" parent="H1_text">
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="H2_text_dark" parent="H2_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/OrdinaryTextColorDark</item>
+    </style>
+
+    <style name="H3_text" parent="H2_text">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="text_small" parent="base_text">
+        <item name="android:textSize">9sp</item>
+        <item name="android:padding">4dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
-        <item name="android:inputType">number</item>
-        <item name="android:textColor">?attr/coloredText</item>
-
     </style>
 
-    <!--<style name="customButton">
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:background">@drawable/button_shape_selector</item>
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
-    </style>-->
+<!--*********************************************************************************************-->
 
-    <style name="checkbox_style">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">10sp</item>
-        <item name="android:padding">16dp</item>
-    </style>
-
-    <style name="divider">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:background">?android:attr/listDivider</item>
-    </style>
-
-    <!--<style name="spinnerStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:background">@drawable/edit_text_field</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">4dp</item>
-        <item name="android:textAlignment">viewStart</item>
-        <item name="android:scrollbarSize">24dp</item>
-    </style>-->
 
 </resources>
