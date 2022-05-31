@@ -401,18 +401,22 @@ public class Data {
 
         list.add(new Algorithm(BIG, R.drawable.big07, 1, "Внутренняя замена", "ρU2ρ'U'ρUρ'","ρ — это 3-й слой, r — 2-й (Rrρ)"));
         list.add(new Algorithm(BIG, R.drawable.big08, 1, "Внешняя замена", "ρUrU'ρ'Ur'","ρ — это 3-й слой, r — 2-й (Rrρ)"));
-        list.add(new Algorithm(BIG, R.drawable.big05, 1, "Замена", "(Rr) U (Rr)' U (Rr) U2 (Rr)'", ""));
-        list.add(new Algorithm(BIG, R.drawable.big05, 1, "Угловая замена", "RwURw' URwU2Rw","Rw — два правых слоя вместе"));
-        list.add(new Algorithm(BIG, R.drawable.big04, 1, "Внешняя замена", "(Dd) R F' U R' F (Dd)'",""));
-        list.add(new Algorithm(BIG, R.drawable.big02, 1, "", "R2B2U2 lU2r'U2rU2 x U2rU2l'U2wl2"+_SPLIT_ +
-                "R2B2U2lU2r'U2RU2F2 rF2l'B2r2","2-й алгоритм — это то же самое, только без перехвата. U2w — это самый нижний слой остается на месте, а все остальные верхние поворачиваются на 180"));
-//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "r2U2r2(Uu)2r2u2",""));
-//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "(Dd)RF'UR'F(Dd)'",""));
-        list.add(new Algorithm(BIG, R.drawable.big01, 1, "", "(Uu)2(Rr)2F2u2F2(Rr)2(Uu)2",""));
-//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "cRF'UR'Fc'",""));
-        list.add(new Algorithm(BIG, R.drawable.big03, 1, "", "(Ll)'U2(Ll)'U2F2(Ll)'F2 (Rr)U2(Rr)'U2{Ll}2",""));
-//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "FUF'U'L'U'L",""));
-//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "UFRURU'F",""));
+        list.add(new Algorithm(BIG, R.drawable.big05, 1, "Угловая замена", "Rr U Rr' U Rr U2 Rr","Rw — два правых слоя вместе"));
+        list.add(new Algorithm(BIG, R.drawable.big06, 1, "Замена центров", "(Rr)' F (Ll)' (Rr) U (Rr) U' (Ll) (Rr)'", ""));
+        list.add(new Algorithm(BIG, R.drawable.big04, 1, "Диагональ + замена", "(Dd) R F' U R' F (Dd)'",""));
+        list.add(new Algorithm(BIG, R.drawable.big02, 1, "(Перекрест)", "R2B2U2 lU2r'U2rU2 x U2rU2l'U2wl2"+_SPLIT_ +
+                "R2B2U2lU2r'U2RU2F2 rF2l'B2r2","Долгий, но легко запоминается. Часто попадается (50/50). 2-й алгоритм — это то же самое, только без перехвата. U2w — это самый нижний слой остается на месте, а все остальные верхние поворачиваются на 180"));
+        list.add(new Algorithm(BIG, R.drawable.big01, 1, "Замена центров", "(Uu)2(Rr)2F2u2F2(Rr)2(Uu)2",""));
+        list.add(new Algorithm(BIG, R.drawable.big03, 1, "Замена крайних", "(Ll)'U2(Ll)'U2F2(Ll)'F2 (Rr)U2(Rr)'U2{Ll}2","Замена крайних элементов между собой. Если не учить, то придется делать перекрест"));
+        list.add(new Algorithm(BIG, R.drawable.big01, 1, "Двойной переворот центров", "cRF'UR'Fc'","Оба центральные элементы переворачиваются на 180 каждый на своём месте"));
+        list.add(new Algorithm(BIG, R.drawable.big09, 1, "Паритет креста", "r2 B2 U2 l U2 r' U2 r U2 F2 r F2 l' B2 r2","Бывает тольк на четных кубиках"));
+        list.add(new Algorithm(BIG, R.drawable.big10, 1, "Паритет углов", "r2 U2 r2 (Uu)2 r2 u2","Бывает тольк на четных кубиках"));
+        list.add(new Algorithm(BIG, R.drawable.big11, 1, "Диагональ", "(Dd)RF'UR'F(Dd)'","Такой алгоритм уже был. Просто чтобы было понятнее для 4-х кубика. Здесь просто меняется диагональ"));
+
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "r2U2r2(Uu)2r2u2",""));это паритет углов
+
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "FUF'U'L'U'L",""));хз что это
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "UFRURU'F",""));хз что это
 
         return list;
     }

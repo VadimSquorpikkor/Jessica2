@@ -1,5 +1,7 @@
 # Jessica2
 
+* <b>2.0.0.10 - 31/05/22</b>
+1. Добавлены алгоритмы для BIG
 * <b>2.0.0.9 - 31/05/22</b>
 1. Добавлены алгоритмы для BIG
 2. Удалены AlgoTypeSelectedFragment, Utils, SectionPagerAdapter2
