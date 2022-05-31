@@ -10,8 +10,8 @@ android {
         minSdk 21
         targetSdk 31
         versionCode 1
-        versionName "1.0.0.6"
-
+        versionName "2.0.0.7"
+        setProperty("archivesBaseName", "Jessica2-v" + versionName)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

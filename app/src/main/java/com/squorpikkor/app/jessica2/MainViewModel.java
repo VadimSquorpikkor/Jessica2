@@ -21,6 +21,10 @@ public class MainViewModel extends ViewModel {
         return data.getList(type);
     }
 
+    public void setLearned(int id, boolean isLearned) {
+        data.setLearned(id, isLearned);
+    }
+
     @Override
     protected void onCleared() {
         Log.e(TAG, "onDestroy");

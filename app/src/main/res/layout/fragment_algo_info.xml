@@ -17,17 +17,25 @@
     <ImageView
         android:id="@+id/image"
         android:layout_gravity="center"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        tools:src="@drawable/f2l01"
+        android:contentDescription="@string/cube_image" />
 
     <TextView
         android:id="@+id/algorithm_fav"
         style="@style/H2_text"
-        tools:text="R2R2R2"/>
+        tools:text="1. R2R2R2"/>
 
     <TextView
         android:id="@+id/algorithm"
         style="@style/H2_text_dark"
-        tools:text="R2R2R2"/>
+        tools:text="2. L2L2L2"/>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/H2_text"
+        tools:text="Описание алгоритма описание алгоритма описание алгоритма описание алгоритма описание алгоритма описание алгоритма описание алгоритма"/>
 
 </LinearLayout>

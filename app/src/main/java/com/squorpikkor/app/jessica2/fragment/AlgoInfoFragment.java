@@ -57,6 +57,9 @@ public class AlgoInfoFragment extends Fragment {
         setAlgoText(view.findViewById(R.id.algorithm_fav), view.findViewById(R.id.algorithm), algorithm.getAlgorithm());
         ImageView img = view.findViewById(R.id.image);
         img.setImageDrawable(getResources().getDrawable(algorithm.getImage()));
+        TextView desc = view.findViewById(R.id.description);
+        desc.setText(algorithm.getDescription());
+
 
         return view;
     }
@@ -65,7 +68,7 @@ public class AlgoInfoFragment extends Fragment {
         for (int i = 0; i < algo.length; i++) {
             Log.e(TAG, "setAlgoText: "+i+" "+algo.length);
             if (i==0) fav.setText("1. "+algo[0]);
-            else oth.append(i+". "+algo[i]+"\n");
+            else oth.append((i+1)+". "+algo[i]+"\n");
         }
     }
 }
