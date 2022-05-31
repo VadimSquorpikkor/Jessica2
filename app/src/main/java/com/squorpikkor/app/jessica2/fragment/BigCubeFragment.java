@@ -14,4 +14,9 @@ public class BigCubeFragment extends BaseFragment{
     int getType() {
         return BIG;
     }
+
+    @Override
+    public int getColumn(){
+        return 3;
+    }
 }

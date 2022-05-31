@@ -1,7 +1,6 @@
 package com.squorpikkor.app.jessica2.data;
 
 import com.squorpikkor.app.jessica2.R;
-import com.squorpikkor.app.jessica2.Utils;
 
 import java.util.ArrayList;
 
@@ -13,17 +12,27 @@ public class Data {
     public static final int BIG = 4;
     public static final String _SPLIT_ = "&";
 
+    private ArrayList<Algorithm> getListByType(ArrayList<Algorithm> list, int type) {
+        ArrayList<Algorithm> newList = new ArrayList<>();
+        for (Algorithm alg:list) {
+            if (alg.getType() == type) {
+                newList.add(alg);
+            }
+        }
+        return newList;
+    }
+
     public void setLearned(int id, boolean isLearned) {
 
     }
 
     public ArrayList<Algorithm> getList(int type) {
         switch (type) {
-            case OLL:return Utils.getListByType(getList(), OLL);
-            case PLL:return Utils.getListByType(getList(), PLL);
-            case BIG:return Utils.getListByType(getList(), BIG);
+            case OLL:return getListByType(getList(), OLL);
+            case PLL:return getListByType(getList(), PLL);
+            case BIG:return getListByType(getList(), BIG);
             case FTL:
-            default :return Utils.getListByType(getList(), FTL);
+            default :return getListByType(getList(), FTL);
         }
     }
 
@@ -389,6 +398,21 @@ public class Data {
         list.add(new Algorithm(PLL, R.drawable.pll21, 1, "Копьё (Лапка, Y-perm)", "F R U' R' U' R U R' F' R U R' U' R' F R F'"+_SPLIT_ +
                 "F R' F R2 U' R' U' R U R' F' R U R' U' F'",
                 "Старайтесь выполнять последнее движение в этой формуле (F') большим пальцем правой руки."));
+
+        list.add(new Algorithm(BIG, R.drawable.big07, 1, "Внутренняя замена", "ρU2ρ'U'ρUρ'","ρ — это 3-й слой, r — 2-й (Rrρ)"));
+        list.add(new Algorithm(BIG, R.drawable.big08, 1, "Внешняя замена", "ρUrU'ρ'Ur'","ρ — это 3-й слой, r — 2-й (Rrρ)"));
+        list.add(new Algorithm(BIG, R.drawable.big05, 1, "Замена", "(Rr) U (Rr)' U (Rr) U2 (Rr)'", ""));
+        list.add(new Algorithm(BIG, R.drawable.big05, 1, "Угловая замена", "RwURw' URwU2Rw","Rw — два правых слоя вместе"));
+        list.add(new Algorithm(BIG, R.drawable.big04, 1, "Внешняя замена", "(Dd) R F' U R' F (Dd)'",""));
+        list.add(new Algorithm(BIG, R.drawable.big02, 1, "", "R2B2U2 lU2r'U2rU2 x U2rU2l'U2wl2"+_SPLIT_ +
+                "R2B2U2lU2r'U2RU2F2 rF2l'B2r2","2-й алгоритм — это то же самое, только без перехвата. U2w — это самый нижний слой остается на месте, а все остальные верхние поворачиваются на 180"));
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "r2U2r2(Uu)2r2u2",""));
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "(Dd)RF'UR'F(Dd)'",""));
+        list.add(new Algorithm(BIG, R.drawable.big01, 1, "", "(Uu)2(Rr)2F2u2F2(Rr)2(Uu)2",""));
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "cRF'UR'Fc'",""));
+        list.add(new Algorithm(BIG, R.drawable.big03, 1, "", "(Ll)'U2(Ll)'U2F2(Ll)'F2 (Rr)U2(Rr)'U2{Ll}2",""));
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "FUF'U'L'U'L",""));
+//        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "UFRURU'F",""));
 
         return list;
     }

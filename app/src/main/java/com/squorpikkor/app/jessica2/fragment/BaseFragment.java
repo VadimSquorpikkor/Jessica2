@@ -32,13 +32,18 @@ public abstract class BaseFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.recycler);
         AlgorithmAdapter adapter = new AlgorithmAdapter();
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 5));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), getColumn()));
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
         adapter.setList(getList());
         adapter.setOnItemClickListener(this::openInfo);
 
         return view;
+    }
+
+    //Для PLL OLL F2L количество столбцов — 5, для BIG — 3
+    int getColumn() {
+        return 5;
     }
 
     //выбирается тот конкретный лист, который будет присваиваться адаптеру
@@ -50,12 +55,6 @@ public abstract class BaseFragment extends Fragment {
     abstract int getType();
 
     public void openInfo(int position) {
-//        Fragment newFragment = PagerFragment.newInstance(position, getType());
-//        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
-//        transaction.replace(R.id.fragment_container, newFragment);
-//        transaction.addToBackStack(null);
-//        transaction.commit();
-
         Intent intent = new Intent(requireActivity(), InfoActivity.class);
         intent.putExtra(EXTRA_POSITION, position);
         intent.putExtra(EXTRA_TYPE, getType());

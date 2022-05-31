@@ -1,5 +1,8 @@
 # Jessica2
 
+* <b>2.0.0.9 - 31/05/22</b>
+1. Добавлены алгоритмы для BIG
+2. Удалены AlgoTypeSelectedFragment, Utils, SectionPagerAdapter2
 * <b>2.0.0.8 - 31/05/22</b>
 1. Исправлен GridLayout: теперь высота элемента — это высота картинки
 2. Добавлена иконка
