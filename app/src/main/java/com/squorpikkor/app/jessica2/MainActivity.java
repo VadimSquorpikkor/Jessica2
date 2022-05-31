@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         mViewModel = new ViewModelProvider(MainActivity.this).get(MainViewModel.class);
 
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        SectionsPagerAdapter4 sectionsPagerAdapter = new SectionsPagerAdapter4(this, getSupportFragmentManager());
         ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);

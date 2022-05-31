@@ -411,7 +411,7 @@ public class Data {
         list.add(new Algorithm(BIG, R.drawable.big01, 1, "Двойной переворот центров", "cRF'UR'Fc'","Оба центральные элементы переворачиваются на 180 каждый на своём месте"));
         list.add(new Algorithm(BIG, R.drawable.big09, 1, "Паритет креста", "r2 B2 U2 l U2 r' U2 r U2 F2 r F2 l' B2 r2","Бывает тольк на четных кубиках"));
         list.add(new Algorithm(BIG, R.drawable.big10, 1, "Паритет углов", "r2 U2 r2 (Uu)2 r2 u2","Бывает тольк на четных кубиках"));
-        list.add(new Algorithm(BIG, R.drawable.big11, 1, "Диагональ", "(Dd)RF'UR'F(Dd)'","Такой алгоритм уже был. Просто чтобы было понятнее для 4-х кубика. Здесь просто меняется диагональ"));
+        list.add(new Algorithm(BIG, R.drawable.big11, 1, "Диагональ", "(Dd)RF'UR'F(Dd)'","Такой алгоритм уже был. Просто чтобы было понятнее для 4-х кубика. Так как здесь нет центрального элемента, то здесь просто меняется диагональ"));
 
 //        list.add(new Algorithm(BIG, R.drawable.pll21, 1, "", "r2U2r2(Uu)2r2u2",""));это паритет углов
 

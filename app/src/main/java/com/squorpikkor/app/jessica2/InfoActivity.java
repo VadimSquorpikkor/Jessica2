@@ -1,7 +1,8 @@
 package com.squorpikkor.app.jessica2;
 
-import static com.squorpikkor.app.jessica2.fragment.BaseFragment.EXTRA_POSITION;
-import static com.squorpikkor.app.jessica2.fragment.BaseFragment.EXTRA_TYPE;
+import static com.squorpikkor.app.jessica2.fragment.GridFragment.EXTRA_POSITION;
+import static com.squorpikkor.app.jessica2.fragment.GridFragment.EXTRA_TYPE;
+
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
