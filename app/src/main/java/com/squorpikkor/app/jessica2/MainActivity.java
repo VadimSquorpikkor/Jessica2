@@ -7,6 +7,8 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
+//import com.squorpikkor.library.SaveLoad;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,5 +26,8 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+
+//        SaveLoad saveLoad = new SaveLoad(this);
+
     }
 }

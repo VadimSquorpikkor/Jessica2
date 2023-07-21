@@ -166,6 +166,8 @@ public class Data {
                 "y L' U2 L U L' U L"+_SPLIT_ +
                 "y' R' U2' R U R' U R"+_SPLIT_ +
                 "y2 L U L' U L U2 L'", "Движение U2 выполняем двумя разными пальцами, можно так же доучить с других сторон."));
+        list.add(new Algorithm(OLL, R.drawable.oll04_v2, 1, "Рыбка", "R U R' U R U2' R'"+_SPLIT_ +
+                "R' U2 R U R' U R", "Предыдущее, только повернуто. В таком виде мне больше нравится"));
         list.add(new Algorithm(OLL, R.drawable.oll05, 1, "Рыбка", "R U2' R' U' R U' R'"+_SPLIT_ +
                 "y L' U' L U' L' U2 L"+_SPLIT_ +
                 "y' R' U' R U' R' U2' R", "Если вам удобно выполнять левой рукой, то можно зеркалить, формула вторая"));
@@ -338,12 +340,15 @@ public class Data {
                 "y R' U2 R' U' y R' F' R2 U' R' U R' F R U' F"+_SPLIT_ +
                 "y' R' U R U' R2' F' U' F U R U' Lw R U' R' U",
                 "Старайтесь не делать лишних перехватов"));
-        list.add(new Algorithm(PLL, R.drawable.pll08, 1, "Лямбды (J-perms)", "R U R' F' R U R' U' R' F R2 U' R' U'"+_SPLIT_ +
+        list.add(new Algorithm(PLL, R.drawable.pll08, 1, "Лямбды (J-perms)",
+                "R U2 R' U' R U2 L' U R' U' L"+_SPLIT_ +
+                "R U R' F' R U R' U' R' F R2 U' R' U'"+_SPLIT_ +
                 "R U2 R' U' R U2 L' U R' U' L"+_SPLIT_ +
                 "y R U' L U2 R' U R U2 R' L' U"+_SPLIT_ +
                 "y2 R' z R U R' D R2 U' R U R2 U'",
                 "Простая и быстрая формула"));
         list.add(new Algorithm(PLL, R.drawable.pll09, 1, "Лямбды (J-perms)", "R' U2' R U R' z R2 U R' D R U'"+_SPLIT_ +
+                "R' U2' R U R' U2' L U' R U L'"+_SPLIT_ +
                 "U' R' U L' U2 R U' R' U2 R L"+_SPLIT_ +
                 "L U' R' U L' U2 R U' R' U2 R"+_SPLIT_ +
                 "x U2 Rw' U' Rw U2 Lw' U R' U' R2",

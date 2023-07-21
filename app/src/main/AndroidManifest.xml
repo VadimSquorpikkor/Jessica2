@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.squorpikkor.app.jessica2">
 
+<!--        android:name="com.squorpikkor.library.SaveLoad"-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/jess_ic_launcher"
