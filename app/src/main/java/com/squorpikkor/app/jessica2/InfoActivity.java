@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.squorpikkor.app.jessica2.pager.PagerFragment;
 
+//не используется. только для варианта открытия инфо в отдельной активити
+@Deprecated
 public class InfoActivity extends AppCompatActivity {
 
     @Override
